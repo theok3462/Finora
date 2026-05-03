@@ -10,6 +10,7 @@ const navItems = [
   { id: "recurring",    label: "Recurring",    icon: RefreshCw       },
   { id: "goals",        label: "Goals",        icon: Target          },
   { id: "investments",  label: "Investments",  icon: TrendingUp      },
+  { id: "insights",     label: "Insights",     icon: TrendingUp      },
   { id: "forecasting",  label: "Forecasting",  icon: Compass         },
   { id: "advice",       label: "Advice",       icon: ThumbsUp        },
 ]
