@@ -115,7 +115,7 @@ function SpendingTab({ transactions }) {
     const byCategory = transactions
       .filter(t => t.transaction_type === "expense" && !PARENT_CATS.has(t.category))
       .reduce((acc, t) => {
-        const cat = t.category || "Uncategorized"
+        const cat = t.category === "Housing" ? "Rent" : (t.category || "Uncategorized")
         acc[cat] = (acc[cat] || 0) + parseFloat(t.amount)
         return acc
       }, {})
