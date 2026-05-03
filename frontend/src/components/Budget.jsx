@@ -17,7 +17,7 @@ const INCOME_IDS = new Set(INCOME_ROWS.map(r => r.id))
 
 const EXPENSE_GROUPS_INITIAL = [
   { id: "housing",       name: "Housing",         rows: [
-    { id: "rent",          name: "Rent",              category: "Rent"             },
+    { id: "rent",          name: "Rent",              category: "Housing"          },
   ]},
   { id: "food",          name: "Food & Dining",    rows: [
     { id: "groceries",     name: "Groceries",         category: "Groceries"  },
