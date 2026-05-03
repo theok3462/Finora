@@ -8,7 +8,7 @@ const TX_API = "http://127.0.0.1:8000/api/transactions/"
 const MONTH_NAMES = ["January","February","March","April","May","June","July","August","September","October","November","December"]
 
 const INCOME_ROWS = [
-  { id: "hourly",    name: "Hourly",    category: "Hourly"    },
+  { id: "hourly",    name: "Hourly",    category: "Employment" },
   { id: "tips",      name: "Tips",      category: "Tips"      },
   { id: "freelance", name: "Freelance", category: "Freelance" },
 ]
