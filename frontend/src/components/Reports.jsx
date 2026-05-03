@@ -10,7 +10,7 @@ const today = new Date()
 const MONTH_SHORT = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
 
 const PARENT_CATS = new Set([
-  "Income", "Employment",
+  "Income",
   "Food", "Food & Dining",
   "Transport", "Transportation",
   "Health", "Health & Fitness",
