@@ -1,2 +1,2 @@
-const API = "https://finora-production-ade4.up.railway.app/api/transactions/"
+const API = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000/api/transactions/"
 export default API
