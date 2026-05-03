@@ -238,7 +238,7 @@ function IncomeTab({ transactions }) {
     const bySource = transactions
       .filter(t => t.transaction_type === "income" && !PARENT_CATS.has(t.category))
       .reduce((acc, t) => {
-        const src = t.category || "Uncategorized"
+        const src = t.title || t.category || "Uncategorized"
         acc[src] = (acc[src] || 0) + parseFloat(t.amount)
         return acc
       }, {})
