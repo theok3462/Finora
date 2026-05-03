@@ -6,7 +6,7 @@ import {
 } from "lucide-react"
 import { CATEGORY_GROUPS, SUBCATEGORY_TO_GROUP } from "../data"
 
-const API = "http://127.0.0.1:8000/api/transactions/"
+import API from "../api"
 
 // ─── Date utilities ────────────────────────────────────────────────────────────
 

@@ -14,7 +14,7 @@ import Forecasting  from "./components/Forecasting"
 import Advice       from "./components/Advice"
 import Insights     from "./components/Insights"
 
-const API = "http://127.0.0.1:8000/api/transactions/"
+import API from "./api"
 
 function App() {
   const [activePage, setActivePage] = useState("dashboard")
