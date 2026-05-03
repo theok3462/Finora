@@ -211,6 +211,7 @@ function TransactionDrawer({ row, budget, actual, transactions, monthKey, visibl
 }
 
 function BudgetRow({ row, budget, actual, onBudgetChange, onOpen }) {
+  const [localVal, setLocalVal] = useState("")
   const [hovered, setHovered] = useState(false)
   const [focused, setFocused] = useState(false)
   const rem = budget - actual
@@ -269,10 +270,10 @@ function BudgetRow({ row, budget, actual, onBudgetChange, onOpen }) {
       <div style={{ textAlign: "right" }}>
         {focused ? (
           <input
-            type="number" autoFocus value={budget || ""}
-            onClick={e => e.stopPropagation()}
-            onChange={e => onBudgetChange(row.id, parseFloat(e.target.value) || 0)}
-            onBlur={() => setFocused(false)}
+            type="number" autoFocus value={localVal !== "" ? localVal : (budget || "")}
+            onClick={e => { e.stopPropagation(); setLocalVal(String(budget || "")) }}
+            onChange={e => setLocalVal(e.target.value)}
+            onBlur={() => { onBudgetChange(row.id, parseFloat(localVal) || budget); setFocused(false) }}
             style={{
               width: 70, textAlign: "right", border: "none",
               borderBottom: "1px solid #c8e6c9", background: "transparent",
