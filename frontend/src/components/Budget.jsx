@@ -270,7 +270,7 @@ function BudgetRow({ row, budget, actual, onBudgetChange, onOpen }) {
       <div style={{ textAlign: "right" }}>
         {focused ? (
           <input
-            type="number" autoFocus value={localVal !== "" ? localVal : (budget || "")}
+            type="number" autoFocus value={localVal}
             onClick={e => { e.stopPropagation(); setLocalVal(String(budget || "")) }}
             onChange={e => setLocalVal(e.target.value)}
             onBlur={() => { onBudgetChange(row.id, localVal === "" ? 0 : parseFloat(localVal) || 0); setFocused(false) }}
