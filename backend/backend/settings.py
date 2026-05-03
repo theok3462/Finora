@@ -129,4 +129,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # allows React running on port 5173 to make requests to Django
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://finora-plum.vercel.app",
 ]
